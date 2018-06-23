@@ -1,0 +1,111 @@
+#include EAstdlib.event
+
+EventPointerTable(0x14,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+Units:
+UNIT Eirika EirikaLord 0x00 Level(1, Ally, 0) [15,1] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth Valkyrie Eirika Level(1, Ally, 0) [14,0] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Gilliam Cavalier Eirika Level(1, Ally, 0) [15,0] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Franz Cavalier_F Eirika Level(1, Ally, 0) [16,0] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Moulder PegasusKnight Eirika Level(1, Ally, 0) [17,0] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Vanessa Archer Eirika Level(1, Ally, 0) [16,2] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Ross Pirate Eirika Level(1, Ally, 0) [15,3] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT
+
+KrashBlock:
+UNIT Colm Fighter Eirika Level(4, Ally, 0) [17,3] 0x00 0x00 0x0 0x00 [SteelAxe, HandAxe] NoAI 
+UNIT Neimi Priest Eirika Level(3, Ally, 0) [14,2] 0x00 0x00 0x0 0x00 [Heal, Unlock] NoAI 
+UNIT
+
+Bad:
+UNIT 0x80 Soldier Bazba Level(3, Enemy, 1) [19,6] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Brigand Bazba Level(3, Enemy, 1) [20,5] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI 
+UNIT 0x80 Mercenary Bazba Level(3, Enemy, 1) [18,9] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI 
+UNIT 0x80 Fighter Bazba Level(3, Enemy, 1) [21,9] 0x00 0x00 0x0 0x00 [Tomahawk] AttackInRangeAI 
+UNIT 0x80 Shaman Bazba Level(3, Enemy, 1) [19,14] 0x2 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x80 Brigand Bazba Level(3, Enemy, 1) [13,11] 0x00 0x00 0x0 0x00 [SteelAxe] AttackInRangeAI 
+UNIT 0x80 Mercenary Bazba Level(3, Enemy, 1) [13,14] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI 
+UNIT 0x80 Knight Bazba Level(3, Enemy, 1) [6,12] 0x00 0x00 0x0 0x00 [Spear] GuardTileAI 
+UNIT 0x80 Knight Bazba Level(3, Enemy, 1) [6,13] 0x00 0x00 0x0 0x00 [Spear] GuardTileAI 
+UNIT 0x80 Mercenary Bazba Level(3, Enemy, 1) [9,9] 0x00 0x00 0x0 0x00 [Runesword] GuardTileAI 
+UNIT 0x80 Shaman Bazba Level(3, Enemy, 1) [6,6] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x80 Archer Bazba Level(3, Enemy, 1) [5,6] 0x2 0x00 0x0 0x00 [Longbow] AttackInRangeAI 
+UNIT 0x80 Cavalier Bazba Level(3, Enemy, 1) [11,5] 0x00 0x00 0x0 0x00 [Horseslayer] AttackInRangeAI 
+UNIT 0x80 Cavalier Bazba Level(3, Enemy, 1) [0,1] 0x00 0x00 0x0 0x00 [Horseslayer] AttackInRangeAI 
+UNIT 0x80 Fighter Bazba Level(3, Enemy, 1) [1,6] 0x00 0x00 0x0 0x00 [HandAxe] GuardTileAI 
+UNIT 0x80 Fighter Bazba Level(3, Enemy, 1) [2,6] 0x00 0x00 0x0 0x00 [HandAxe] GuardTileAI 
+UNIT 0x80 Myrmidon Bazba Level(3, Enemy, 1) [0,13] 0x00 0x00 0x0 0x00 [SilverSword] PursueWithoutHeedAI 
+UNIT 0x80 Myrmidon Bazba Level(3, Enemy, 1) [0,12] 0x00 0x00 0x0 0x00 [SilverSword] PursueWithoutHeedAI 
+UNIT 0x80 Myrmidon Bazba Level(3, Enemy, 1) [2,10] 0x00 0x00 0x0 0x00 [SilverSword] AttackInRangeAI 
+UNIT 0x80 Brigand Bazba Level(3, Enemy, 1) [8,4] 0x00 0x00 0x0 0x00 [HandAxe] GuardTileAI 
+UNIT 0x80 Brigand Bazba Level(3, Enemy, 1) [9,4] 0x00 0x00 0x0 0x00 [HandAxe] GuardTileAI 
+UNIT 0x80 Archer Bazba Level(3, Enemy, 1) [3,0] 0x00 0x00 0x0 0x00 [Longbow] AttackInRangeAI 
+UNIT 0x80 Archer Bazba Level(3, Enemy, 1) [7,0] 0x00 0x00 0x0 0x00 [Longbow] AttackInRangeAI 
+UNIT 0x80 Mercenary Bazba Level(3, Enemy, 1) [1,0] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI 
+UNIT Bazba Shaman 0x00 Level(5, Enemy, 0) [5,1] 0x2 0x00 0x0 0x00 [Fenrir, Vulnerary] GuardTileAI 
+UNIT
+
+ThiefBlock:
+UNIT 0x80 Thief 0x00 Level(3, Enemy, 1) [9,12] 0x02 0x00 0x0 0x00 [SlimSword, Lockpick] LootingThiefAI
+UNIT
+
+TurnBasedEvents:
+TURN 0x0 ThiefReinforcement [5,0] 0x0
+END_MAIN
+
+ThiefReinforcement:
+ReinforcementEvent(ThiefBlock)
+ENDA
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Chest(Swordslayer,8,10)
+Chest(Stone,1,12)
+Chest(AngelicRobe,1,1)
+Seize(5,1)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+//DO NOT TOUCH
+WORD $00
+
+Tutorial:
+//DO NOT TOUCH
+WORD $00
+
+TrapData:
+END_MAIN
+
+ALIGN 4
+
+BeginningScene:
+LOAD2 0x1 Units
+ENUN
+LOAD1 0x1 Bad
+ENUN
+NoFade
+ENDA
+
+EndingScene:
+MNCH 4
+ENDA
+
+MESSAGE Events end at offset currentOffset

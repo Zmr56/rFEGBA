@@ -1,0 +1,27 @@
+##Name_Goury
+Goury[X]
+
+##Desc_Goury
+A young man studying[N]
+the hacking arts.[X]
+
+##Name_Jelly
+Jelly[X]
+
+##Desc_Jelly
+Goury's close ally.[N]
+Watch his 0% run.[X]
+
+##Name_DonDon
+DonDon[X]
+
+##Desc_DonDon
+Famed FE player. Has[N]
+done many 0% runs.[X]
+
+##Name_Mekkah
+Mekkah[X]
+
+##Desc_Mekkah
+A well respected FE[N]
+YouTuber. Wise as well.[X]

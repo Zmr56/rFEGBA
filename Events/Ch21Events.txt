@@ -1,0 +1,137 @@
+#include EAstdlib.event
+
+EventPointerTable(0x14,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+Units:
+UNIT Eirika EirikaLord 0x00 Level(1, Ally, 0) [8,29] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimLord Eirika Level(1, Ally, 0) [9,28] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Gilliam EphraimLord Eirika Level(1, Ally, 0) [9,30] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Franz EphraimLord Eirika Level(1, Ally, 0) [7,28] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Moulder EphraimLord Eirika Level(1, Ally, 0) [7,30] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Vanessa EphraimLord Eirika Level(1, Ally, 0) [6,29] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Ross EphraimLord Eirika Level(1, Ally, 0) [5,29] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Neimi EphraimLord Eirika Level(1, Ally, 0) [11,28] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Colm EphraimLord Eirika Level(1, Ally, 0) [11,30] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Garcia EphraimLord Eirika Level(1, Ally, 0) [12,29] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Innes EphraimLord Eirika Level(1, Ally, 0) [13,28] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Lute EphraimLord Eirika Level(1, Ally, 0) [13,30] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Natasha EphraimLord Eirika Level(1, Ally, 0) [14,29] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Cormag EphraimLord Eirika Level(1, Ally, 0) [15,29] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT
+
+KrashBlock:
+UNIT Colm Fighter Eirika Level(4, Ally, 0) [17,3] 0x00 0x00 0x0 0x00 [SteelAxe, HandAxe] NoAI 
+UNIT Neimi Priest Eirika Level(3, Ally, 0) [14,2] 0x00 0x00 0x0 0x00 [Heal, Unlock] NoAI 
+UNIT
+
+WestBad:
+UNIT 0x80 General Riev Level(14, Enemy, 1) [2,26] 0x00 0x00 0x0 0x00 [Spear] GuardTileAI 
+UNIT 0x80 Hero Riev Level(14, Enemy, 1) [3,26] 0x00 0x00 0x0 0x00 [Tomahawk] GuardTileAI 
+UNIT 0x80 Hero Riev Level(14, Enemy, 1) [0,22] 0x00 0x00 0x0 0x00 [SilverBlade] AttackInRangeAI 
+UNIT 0x80 General Riev Level(14, Enemy, 1) [7,22] 0x00 0x00 0x0 0x00 [Spear] AttackInRangeAI 
+UNIT 0x80 Sage Riev Level(14, Enemy, 1) [7,25] 0x00 0x00 0x0 0x00 [Fimbulvetr] AttackInRangeAI 
+UNIT 0x80 Berserker Riev Level(14, Enemy, 1) [4,20] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
+UNIT 0x80 Druid Riev Level(14, Enemy, 1) [6,18] 0x00 0x00 0x0 0x00 [Nosferatu] GuardTileAI 
+UNIT 0x80 WyvernLord Riev Level(14, Enemy, 1) [7,18] 0x00 0x00 0x0 0x00 [Spear] GuardTileAI 
+UNIT 0x80 Ranger Riev Level(14, Enemy, 1) [1,16] 0x00 0x00 0x0 0x00 [SilverSword, SilverBow] AttackInRangeAI 
+UNIT 0x80 Ranger Riev Level(14, Enemy, 1) [2,15] 0x00 0x00 0x0 0x00 [SilverSword, SilverBow] AttackInRangeAI 
+UNIT 0x80 Berserker Riev Level(14, Enemy, 1) [5,12] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
+UNIT 0x80 GreatKnight Riev Level(14, Enemy, 1) [4,10] 0x00 0x00 0x0 0x00 [SilverLance] AttackInRangeAI 
+UNIT 0x80 GreatKnight Riev Level(14, Enemy, 1) [0,7] 0x00 0x00 0x0 0x00 [Horseslayer, Tomahawk] AttackInRangeAI 
+UNIT 0x80 WyvernLord Riev Level(14, Enemy, 1) [7,8] 0x00 0x00 0x0 0x00 [SilverLance] AttackInRangeAI 
+UNIT 0x80 General Riev Level(14, Enemy, 1) [7,3] 0x00 0x00 0x0 0x00 [Spear] GuardTileAI 
+UNIT 0x80 Druid Riev Level(14, Enemy, 1) [7,4] 0x00 0x00 0x0 0x00 [Nosferatu] GuardTileAI 
+UNIT 0x80 Swordmaster Riev Level(14, Enemy, 1) [3,2] 0x2 0x00 0x0 0x00 [BraveSword] AttackInRangeAI 
+UNIT 0x80 Hero Riev Level(14, Enemy, 1) [9,3] 0x00 0x00 0x0 0x00 [SilverBlade, Longsword] AttackInRangeAI 
+UNIT 0x80 Druid Riev Level(14, Enemy, 1) [11,3] 0x2 0x00 0x0 0x00 [Fenrir, Stone] AttackInRangeAI 
+UNIT 0x80 WyvernLord Riev Level(14, Enemy, 1) [9,7] 0x00 0x00 0x0 0x00 [Spear, HeavySpear] GuardTileAI 
+UNIT 0x80 Berserker Riev Level(14, Enemy, 1) [10,7] 0x00 0x00 0x0 0x00 [Tomahawk, Hammer] GuardTileAI 
+UNIT 0x80 Hero Riev Level(16, Enemy, 1) [11,7] 0x00 0x00 0x0 0x00 [Runesword, Longsword] GuardTileAI 
+UNIT 0x80 Warrior Riev Level(16, Enemy, 1) [10,5] 0x00 0x00 0x0 0x00 [Longbow, BraveAxe] AttackInRangeAI 
+UNIT Riev General 0x00 Level(17, Enemy, 0) [10,2] 0x00 0x00 0x0 0x00 [Spear, SilverAxe, BraveAxe, HoplonShield] GuardTileAI 
+UNIT
+
+EastBad:
+UNIT 0x80 Warrior Riev Level(14, Enemy, 1) [13,3] 0x00 0x00 0x0 0x00 [Tomahawk, Hammer] GuardTileAI 
+UNIT 0x80 GreatKnight Riev Level(14, Enemy, 1) [13,4] 0x00 0x00 0x0 0x00 [WindSword, Longsword] GuardTileAI 
+UNIT 0x80 WyvernLord Riev Level(14, Enemy, 1) [19,7] 0x00 0x00 0x0 0x00 [SilverLance] AttackInRangeAI 
+UNIT 0x80 WyvernLord Riev Level(14, Enemy, 1) [20,8] 0x00 0x00 0x0 0x00 [SilverBlade] AttackInRangeAI 
+UNIT 0x80 WyvernLord Riev Level(14, Enemy, 1) [16,14] 0x00 0x00 0x0 0x00 [SilverLance] AttackInRangeAI 
+UNIT 0x80 Swordmaster Riev Level(14, Enemy, 1) [16,9] 0x00 0x00 0x0 0x00 [SilverSword] AttackInRangeAI 
+UNIT 0x80 Berserker Riev Level(14, Enemy, 1) [13,12] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
+UNIT 0x80 Hero Riev Level(14, Enemy, 1) [13,18] 0x00 0x00 0x0 0x00 [Runesword] GuardTileAI 
+UNIT 0x80 General Riev Level(14, Enemy, 1) [14,18] 0x00 0x00 0x0 0x00 [Spear] GuardTileAI 
+UNIT 0x80 GreatKnight Riev Level(14, Enemy, 1) [11,24] 0x00 0x00 0x0 0x00 [SilverBlade] AttackInRangeAI 
+UNIT 0x80 Druid Riev Level(14, Enemy, 1) [13,22] 0x00 0x00 0x0 0x00 [Fenrir] AttackInRangeAI 
+UNIT 0x80 Paladin Riev Level(14, Enemy, 1) [18,20] 0x00 0x00 0x0 0x00 [SilverLance] AttackInRangeAI 
+UNIT 0x80 Swordmaster Riev Level(14, Enemy, 1) [20,21] 0x00 0x00 0x0 0x00 [SilverSword] AttackInRangeAI 
+UNIT 0x80 GreatKnight Riev Level(14, Enemy, 1) [18,26] 0x00 0x00 0x0 0x00 [Spear] GuardTileAI 
+UNIT 0x80 Paladin Riev Level(14, Enemy, 1) [17,26] 0x00 0x00 0x0 0x00 [Runesword] GuardTileAI 
+UNIT 0x80 MageKnight Riev Level(14, Enemy, 1) [10,12] 0x00 0x00 0x0 0x00 [Fimbulvetr] AttackInRangeAI 
+UNIT 0x80 Valkyrie Riev Level(14, Enemy, 1) [10,14] 0x00 0x00 0x0 0x00 [Luce, Physic, Silence] AttackInRangeAI 
+UNIT
+
+ThiefBlock:
+UNIT 0x80 Thief 0x00 Level(3, Enemy, 1) [9,12] 0x02 0x00 0x0 0x00 [SlimSword, Lockpick] LootingThiefAI
+UNIT
+
+TurnBasedEvents:
+TURN 0x0 ThiefReinforcement [5,0] 0x0
+END_MAIN
+
+ThiefReinforcement:
+ReinforcementEvent(ThiefBlock)
+ENDA
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Chest(Swordslayer,8,10)
+Chest(Stone,1,12)
+Chest(AngelicRobe,1,1)
+Seize(5,1)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+//DO NOT TOUCH
+WORD $00
+
+Tutorial:
+//DO NOT TOUCH
+WORD $00
+
+TrapData:
+END_MAIN
+
+ALIGN 4
+
+BeginningScene:
+LOAD2 0x1 Units
+ENUN
+LOAD1 0x1 Bad
+ENUN
+NoFade
+ENDA
+
+EndingScene:
+MNCH 4
+ENDA
+
+MESSAGE Events end at offset currentOffset

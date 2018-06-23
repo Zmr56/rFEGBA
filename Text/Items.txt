@@ -1,0 +1,54 @@
+## Name_Rignoran
+Rignoran[X]
+
+## RignoranDesc
+Eff. vs. infantry. Lord only.[X]
+
+## Name_SuperBlitzLance
+Super Blitz[X]
+
+## SuperBlitzDesc
+Crusader Babby's lance. Void.[X]
+
+## DonateName
+(DONATE)[X]
+
+## DonateDesc
+A fierce demand for cash.[X]
+
+## OAMName
+OAM Error[X]
+
+## OAMDesc
+An error in reality's fabric.[X]
+
+## DyuteAuraDesc
+A powerful blast of light. Doot.[X]
+
+## DragonstoneDesc
+Allows Manaketes to become dragons.[X]
+
+## BootsName
+Boots[X]
+
+## AircaliburName
+Aircalibur[X]
+
+## MineName
+Mine[X]
+
+## HurricaneName
+Hurricane[X]
+
+## HurricaneDesc
+Effective against Armors.[X]
+
+## CardeaName
+Careda[X]
+
+## CardeaDesc
+Ignores defence.[X]
+
+## MineDesc
+Sets a trap that does damage[N]
+to anyone who steps on it.[X]

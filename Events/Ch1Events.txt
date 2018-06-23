@@ -1,0 +1,95 @@
+#include EAstdlib.event
+
+EventPointerTable(0x7,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+Units:
+UNIT Goury DarkLord 0x00 Level(1, Ally, 0) [2,3] 0x00 0x00 0x0 0x00 [Rapier, Flux, Vulnerary] NoAI 
+UNIT Jelly Valkyrie Goury Level(1, Ally, 0) [1,4] 0x00 0x00 0x0 0x00 [Shine, Mend, Vulnerary] NoAI 
+UNIT DonDon Cavalier Goury Level(1, Ally, 0) [3,4] 0x00 0x00 0x0 0x00 [IronSword] NoAI 
+UNIT Mekkah Cavalier_F Goury Level(1, Ally, 0) [2,5] 0x00 0x00 0x0 0x00 [IronLance] NoAI 
+UNIT
+
+Bad:
+UNIT 0x80 Brigand ONeill Level(1, Enemy, 1) [4,9] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI 
+UNIT 0x80 Fighter ONeill Level(1, Enemy, 1) [10,12] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI 
+UNIT 0x80 Fighter ONeill Level(1, Enemy, 1) [9,12] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI 
+UNIT 0x80 Cavalier ONeill Level(1, Enemy, 1) [10,15] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Shaman ONeill Level(1, Enemy, 1) [8,17] 0x2 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, 1) [6,15] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI 
+UNIT 0x80 Fighter ONeill Level(1, Enemy, 1) [8,8] 0x00 0x00 0x0 0x00 [HandAxe] AttackInRangeAI 
+UNIT 0x80 Cavalier ONeill Level(1, Enemy, 1) [14,13] 0x00 0x00 0x0 0x00 [Javelin] AttackInRangeAI 
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, 1) [8,3] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI 
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, 1) [4,15] 0x00 0x00 0x0 0x00 [Longsword] AttackInRangeAI 
+UNIT ONeill Warrior 0x00 Level(1, Enemy, 0) [3,17] 0x2 0x00 0x0 0x00 [HandAxe, DevilAxe, Vulnerary] AttackInRangeAI 
+UNIT
+
+ReinforcementBlock:
+UNIT 0x80 Thief 0x00 Level(1, Enemy, 1) [12,3] 0x00 0x00 0x0 0x00 [IronSword] BrigandAI
+UNIT 0x80 Shaman 0x00 Level(1, Enemy, 1) [11,3] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI
+UNIT
+
+TurnBasedEvents:
+TURN 0x0 BadReinforcement [3,0] 0x0
+END_MAIN
+
+BadReinforcement:
+ReinforcementEvent(ReinforcementBlock)
+ENDA
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Village(0x8,VillageBlade,10,8)
+Village(0x9,VillageBook,12,14)
+END_MAIN
+
+VillageBlade:
+VillageEventItem(VillageText, Village, IronBlade)
+
+VillageBook:
+VillageEventItem(VillageText, Village, SecretBook)
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+END_MAIN
+
+Dunno:
+//DO NOT TOUCH
+WORD $00
+
+Tutorial:
+//DO NOT TOUCH
+WORD $00
+
+TrapData:
+END_MAIN
+
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 Units
+ENUN
+LOAD1 0x1 Bad
+ENUN
+NoFade
+ENDA
+
+EndingScene:
+MNCH 1
+ENDA
+
+MESSAGE Events end at offset currentOffset
